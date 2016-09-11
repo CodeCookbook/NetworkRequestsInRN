@@ -28,20 +28,10 @@ import {
 } from 'react-native';
 
 class NetworkInspector extends Component {
-
-  constructor(props) {
-    super(props);
-    this._fetchStory = this._fetchStory.bind(this);
-  }
-
-  _fetchStory() {
-    fetch('https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty')
-  }
-
   render() {
     return (
       <View style={styles.container}>
-        <TouchableHighlight onPress={this._fetchStory}>
+        <TouchableHighlight>
           <Text style={styles.welcome}>
             Code Cookbook
           </Text>
